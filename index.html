@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.css">
+    <script src="https://kit.fontawesome.com/665e42ba4f.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <section_1>
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container-fluid">
+        <img src="img/_318119472.png" alt="logo">
+        <form class="d-flex">
+          <select class="form-select form-search" aria-label="Default select example">
+            <option selected>TODAS LAS CATEGORÍAS</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+          <input class="form-control me-2 text-search" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit"><i class="fas fa-search"></i></button>
+        </form>
+        <div class="iconos">
+          <img src="img/constructor.png" alt="logo_1">
+          <img src="img/estrella.png" alt="logo_2">
+          <img src="img/carrito-de-compras.png" alt="logo_3">     
+        </form>
+        </div>
+      </div>
+    </nav>
+  </section_1>
+  <section_2>
+    <ul class="nav nav-bar justify-content-center">
+      <li class="nav-item">
+        <a class="nav-link subrayado"  href="#">INICIO</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#">NUEVO</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">SOLO POR HOY</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link color" href="#">OFERTAS%</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">BLOG</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">CONTACTO</a>
+      </li>
+    </ul>
+  </section_2>
+  <section_3>
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/Group 270.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="img/Group 1617.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="img/Group 1618.png" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section_3>
+  <section_4>
+    <div class="cont">
+      <img src="img/Group 1508.png" alt="">
+      <div class="title">
+        <h3>Ofertas del mes</h3>
+        <hr>
+      </div>
+      <div id="carouselExampleIndicators" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="cards w-100 d-flex justify-content-between">
+              <div class="card mb-3" style="max-width: 49%;">
+                <div class="head d-flex justify-content-between">
+                  <p class="oferta">Oferta relampago</p>
+                  <div class="time d-flex">
+                    <p class="d-flex">Tiempo restante:</p>
+                    <div class="cont-temporizador">
+                      <div class="bloque">
+                        <div class="horas" id="horas">--</div>
+                      </div>
+                      <div class="bloque">
+                        <div class="minutos" id="minutos">--</div>
+                      </div>
+                      <div class="bloque">
+                        <div class="segundos" id="segundos">--</div>
+                      </div>
+                    </div>
+                    <p class="min">Min</p>
+                  </div>
+                </div>
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="img/Rectangle.png" class="img-fluid rounded-start" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h6 class="card-title sub">Home Elementes</h6>
+                      <h3 class="card-title">Srive Shoulder Pack</h3>
+                      <img src="img/sale.png" class="sale" alt="sale">
+                      <p class="card-text">Cuidar tu jardín es una labor
+                        que requiere de herramientas especiales, como lo son palas y rastrillo</p>
+                      <div class="cash d-flex">
+                        <p class="prise_1">$70.000</p>
+                        <p class="prise_2">$99.000</p>
+                      </div>
+                      <div class="container_shop d-flex align-center mb-3">
+                        <div id="conta">
+                          <button id="decrement">-</button>
+                          <div id="number">0</div><button id="increment">+</button>
+                        </div>
+                        <button class="btn_car">ANADIR AL CARRITO
+                          <img src="img/carrito-de-compras - copia.png" class="shop_car" alt="logo_3">
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card mb-3" style="max-width: 49%;">
+                <div class="head d-flex justify-content-between">
+                  <p class="oferta">Oferta relampago</p>
+                  <div class="time d-flex">
+                    <p class="d-flex">Tiempo restante:</p>
+                    <div class="cont-temporizador">
+                      <div class="bloque">
+                        <div class="horas" id="horas_2">--</div>
+                      </div>
+                      <div class="bloque">
+                        <div class="minutos" id="minutos_2">--</div>
+                      </div>
+                      <div class="bloque">
+                        <div class="segundos" id="segundos_2">--</div>
+                      </div>
+                    </div>
+                    <p class="min">Min</p>
+                  </div>
+                </div>
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="img/Rectangle-1.png" class="img-fluid rounded-start" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h6 class="card-title sub">Home Elementes</h6>
+                      <h3 class="card-title">Srive Shoulder Pack</h3>
+                      <img src="img/sale.png" class="sale" alt="sale">
+                      <p class="card-text">Cuidar tu jardín es una labor
+                        que requiere de herramientas especiales, como lo son palas y rastrillo</p>
+                      <div class="cash d-flex">
+                        <p class="prise_1">$70.000</p>
+                        <p class="prise_2">$99.000</p>
+                      </div>
+                      <div class="container_shop d-flex align-center">
+                        <div id="conta">
+                          <button id="decrement">-</button>
+                          <div id="number">0</div><button id="increment">+</button>
+                        </div>
+                        <button class="btn_car">ANADIR AL CARRITO
+                          <img src="img/carrito-de-compras - copia.png" class="shop_car" alt="logo_3">
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="cards w-100 d-flex justify-content-between">
+              <div class="card mb-3" style="max-width: 49%;">
+                <div class="head d-flex justify-content-between">
+                  <p class="oferta">Oferta relampago</p>
+                  <div class="time d-flex">
+                    <p class="d-flex">Tiempo restante:</p>
+                    <div class="cont-temporizador">
+                      <div class="bloque">
+                        <div class="horas" id="horas">--</div>
+                      </div>
+                      <div class="bloque">
+                        <div class="minutos" id="minutos">--</div>
+                      </div>
+                      <div class="bloque">
+                        <div class="segundos" id="segundos">--</div>
+                      </div>
+                    </div>
+                    <p class="min">Min</p>
+                  </div>
+                </div>
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="img/Rectangle.png" class="img-fluid rounded-start" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h6 class="card-title sub">Home Elementes</h6>
+                      <h3 class="card-title">Srive Shoulder Pack</h3>
+                      <img src="img/sale.png" class="sale" alt="sale">
+                      <p class="card-text">Cuidar tu jardín es una labor
+                        que requiere de herramientas especiales, como lo son palas y rastrillo</p>
+                      <div class="cash d-flex">
+                        <p class="prise_1">$70.000</p>
+                        <p class="prise_2">$99.000</p>
+                      </div>
+                      <div class="container_shop d-flex align-center">
+                        <div id="conta">
+                          <button id="decrement">-</button>
+                          <div id="number">0</div><button id="increment">+</button>
+                        </div>
+                        <button class="btn_car">ANADIR AL CARRITO
+                          <img src="img/carrito-de-compras - copia.png" class="shop_car" alt="logo_3">
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card mb-3" style="max-width: 49%;">
+                <div class="head d-flex justify-content-between">
+                  <p class="oferta">Oferta relampago</p>
+                  <div class="time d-flex">
+                    <p class="d-flex">Tiempo restante:</p>
+                    <div class="cont-temporizador">
+                      <div class="bloque">
+                        <div class="horas" id="horas_2">--</div>
+                      </div>
+                      <div class="bloque">
+                        <div class="minutos" id="minutos_2">--</div>
+                      </div>
+                      <div class="bloque">
+                        <div class="segundos" id="segundos_2">--</div>
+                      </div>
+                    </div>
+                    <p class="min">Min</p>
+                  </div>
+                </div>
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="img/Rectangle-1.png" class="img-fluid rounded-start" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h6 class="card-title sub">Home Elementes</h6>
+                      <h3 class="card-title">Srive Shoulder Pack</h3>
+                      <img src="img/sale.png" class="sale" alt="sale">
+                      <p class="card-text">Cuidar tu jardín es una labor
+                        que requiere de herramientas especiales, como lo son palas y rastrillo</p>
+                      <div class="cash d-flex">
+                        <p class="prise_1">$70.000</p>
+                        <p class="prise_2">$99.000</p>
+                      </div>
+                      <div class="container_shop d-flex align-center">
+                        <div id="conta">
+                          <button id="decrement">-</button>
+                          <div id="number">0</div><button id="increment">+</button>
+                        </div>
+                        <button class="btn_car">ANADIR AL CARRITO
+                          <img src="img/carrito-de-compras - copia.png" class="shop_car" alt="logo_3">
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="cards w-100 d-flex justify-content-between">
+              <div class="card mb-3" style="max-width: 49%;">
+                <div class="head d-flex justify-content-between">
+                  <p class="oferta">Oferta relampago</p>
+                  <div class="time d-flex">
+                    <p class="d-flex">Tiempo restante:</p>
+                    <div class="cont-temporizador">
+                      <div class="bloque">
+                        <div class="horas" id="horas">--</div>
+                      </div>
+                      <div class="bloque">
+                        <div class="minutos" id="minutos">--</div>
+                      </div>
+                      <div class="bloque">
+                        <div class="segundos" id="segundos">--</div>
+                      </div>
+                    </div>
+                    <p class="min">Min</p>
+                  </div>
+                </div>
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="img/Rectangle.png" class="img-fluid rounded-start" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h6 class="card-title sub">Home Elementes</h6>
+                      <h3 class="card-title">Srive Shoulder Pack</h3>
+                      <img src="img/sale.png" class="sale" alt="sale">
+                      <p class="card-text">Cuidar tu jardín es una labor
+                        que requiere de herramientas especiales, como lo son palas y rastrillo</p>
+                      <div class="cash d-flex">
+                        <p class="prise_1">$70.000</p>
+                        <p class="prise_2">$99.000</p>
+                      </div>
+                      <div class="container_shop d-flex align-center">
+                        <div id="conta">
+                          <button id="decrement">-</button>
+                          <div id="number">0</div><button id="increment">+</button>
+                        </div>
+                        <button class="btn_car">ANADIR AL CARRITO
+                          <img src="img/carrito-de-compras - copia.png" class="shop_car" alt="logo_3">
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card mb-3" style="max-width: 49%;">
+                <div class="head d-flex justify-content-between">
+                  <p class="oferta">Oferta relampago</p>
+                  <div class="time d-flex">
+                    <p class="d-flex">Tiempo restante:</p>
+                    <div class="cont-temporizador">
+                      <div class="bloque">
+                        <div class="horas" id="horas_2">--</div>
+                      </div>
+                      <div class="bloque">
+                        <div class="minutos" id="minutos_2">--</div>
+                      </div>
+                      <div class="bloque">
+                        <div class="segundos" id="segundos_2">--</div>
+                      </div>
+                    </div>
+                    <p class="min">Min</p>
+                  </div>
+                </div>
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="img/Rectangle-1.png" class="img-fluid rounded-start" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h6 class="card-title sub">Home Elementes</h6>
+                      <h3 class="card-title">Srive Shoulder Pack</h3>
+                      <img src="img/sale.png" class="sale" alt="sale">
+                      <p class="card-text">Cuidar tu jardín es una labor
+                        que requiere de herramientas especiales, como lo son palas y rastrillo</p>
+                      <div class="cash d-flex">
+                        <p class="prise_1">$70.000</p>
+                        <p class="prise_2">$99.000</p>
+                      </div>
+                      <div class="container_shop d-flex align-center">
+                        <div id="conta">
+                          <button id="decrement">-</button>
+                          <div id="number">0</div><button id="increment">+</button>
+                        </div>
+                        <button class="btn_car">ANADIR AL CARRITO
+                          <img src="img/carrito-de-compras - copia.png" class="shop_car" alt="logo_3">
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="control">
+            <button class="carousel-control-prev carousel-control-prev_2" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next carousel-control-next_2" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <ul class="nav nav-pills mb-3 justify-content-end d-flex" id="pills-tab" role="tablist">
+        <div class="title">
+          <h3>Ofertas del mes</h3>
+          <hr class="hr_2">
+        </div>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active color_2" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">DESTORNILLADOR</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link color_2" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">CASCO</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link color_2" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">GUANTES</button>
+        </li>
+      </ul>
+      <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+          <div class="contenedor">
+            <main class="contenido-principal">
+              <div class="contenido-principal__contenedor">
+              </div>
+            </main>
+        
+            <div class="carousel">
+              <div class="carousel__contenedor">
+                <button aria-label="Anterior" class="carousel__anterior">
+                  <i class="fas fa-chevron-left"></i>
+                </button>
+        
+                <div class="carousel__lista">
+                  <div class="carousel__elementos">
+                    <div class="card" style="width: 18rem;">
+                      <img src="img/sale-2.png" class="w-50" style="margin: 0 auto;" alt="sale2">
+                      <p class="card-text mb-0 text-center">HOME ELEMENTES</p>
+                      <img src="img/taladro-3.png" class="card-img-top d-block" alt="taladro3">
+                      <div class="card-body">
+                        <p class="card-text mb-0">Nuevo</p>
+                        <h6 class="card-title">Crown Summit Backpack</h6>
+                        <div class="cash d-flex">
+                          <p class="prise_1">$70.000</p>
+                          <p class="prise_2">$99.000</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel__elementos">
+                    <div class="card" style="width: 18rem;">
+                      <img src="img/sale-2.png" class="w-50" style="margin: 0 auto;" alt="sale2">
+                      <p class="card-text mb-0 text-center">HOME ELEMENTES</p>
+                      <img src="img/taladro-2.png" class="card-img-top" alt="taladro3">
+                      <div class="card-body">
+                        <p class="card-text mb-0">Nuevo</p>
+                        <h6 class="card-title">Crown Summit Backpack</h6>
+                        <div class="cash d-flex">
+                          <p class="prise_1">$70.000</p>
+                          <p class="prise_2">$99.000</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel__elementos">
+                    <div class="card" style="width: 18rem;">
+                      <img src="img/sale-2.png" class="w-50 opacity-0" style="margin: 0 auto;" alt="sale2">
+                      <p class="card-text mb-0 text-center">HOME ELEMENTES</p>
+                      <img src="img/taladro-1.png" class="card-img-top" alt="taladro3">
+                      <div class="card-body">
+                        <p class="card-text mb-0">Nuevo</p>
+                        <h6 class="card-title">Crown Summit Backpack</h6>
+                        <div class="cash d-flex">
+                          <p class="prise_1">$70.000</p>
+                          <p class="prise_2">$99.000</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel__elementos">
+                    <div class="card" style="width: 18rem;">
+                      <img src="img/sale-2.png" class="w-50 opacity-0" style="margin: 0 auto;" alt="sale2">
+                      <p class="card-text mb-0 text-center">HOME ELEMENTES</p>
+                      <img src="img/taladro.png" class="card-img-top" alt="taladro3">
+                      <div class="card-body">
+                        <p class="card-text mb-0">Nuevo</p>
+                        <h6 class="card-title">Crown Summit Backpack</h6>
+                        <div class="cash d-flex">
+                          <p class="prise_1">$70.000</p>
+                          <p class="prise_2">$99.000</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel__elementos">
+                    <div class="card" style="width: 18rem;">
+                      <img src="img/sale-2.png" class="w-50 opacity-0" style="margin: 0 auto;" alt="sale2">
+                      <p class="card-text mb-0 text-center">HOME ELEMENTES</p>
+                      <img src="img/taladro-3.png" class="card-img-top" alt="taladro3">
+                      <div class="card-body">
+                        <p class="card-text mb-0">Nuevo</p>
+                        <h6 class="card-title">Crown Summit Backpack</h6>
+                        <div class="cash d-flex">
+                          <p class="prise_1">$70.000</p>
+                          <p class="prise_2">$99.000</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel__elementos">
+                    <div class="card" style="width: 18rem;">
+                      <img src="img/sale-2.png" class="w-50 opacity-0" style="margin: 0 auto;" alt="sale2">
+                      <p class="card-text mb-0 text-center">HOME ELEMENTES</p>
+                      <img src="img/taladro-2.png" class="card-img-top" alt="taladro3">
+                      <div class="card-body">
+                        <p class="card-text mb-0">Nuevo</p>
+                        <h6 class="card-title">Crown Summit Backpack</h6>
+                        <div class="cash d-flex">
+                          <p class="prise_1">$70.000</p>
+                          <p class="prise_2">$99.000</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel__elementos">
+                    <div class="card" style="width: 18rem;">
+                      <img src="img/sale-2.png" class="w-50 opacity-0" style="margin: 0 auto;" alt="sale2">
+                      <p class="card-text mb-0 text-center">HOME ELEMENTES</p>
+                      <img src="img/taladro-1.png" class="card-img-top" alt="taladro3">
+                      <div class="card-body">
+                        <p class="card-text mb-0">Nuevo</p>
+                        <h6 class="card-title">Crown Summit Backpack</h6>
+                        <div class="cash d-flex">
+                          <p class="prise_1">$70.000</p>
+                          <p class="prise_2">$99.000</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel__elementos">
+                    <div class="card" style="width: 18rem;">
+                      <img src="img/sale-2.png" class="w-50 opacity-0" style="margin: 0 auto;" alt="sale2">
+                      <p class="card-text mb-0 text-center">HOME ELEMENTES</p>
+                      <img src="img/taladro.png" class="card-img-top" alt="taladro3">
+                      <div class="card-body">
+                        <p class="card-text mb-0">Nuevo</p>
+                        <h6 class="card-title">Crown Summit Backpack</h6>
+                        <div class="cash d-flex">
+                          <p class="prise_1">$70.000</p>
+                          <p class="prise_2">$99.000</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+        
+                <button aria-label="Siguiente" class="carousel__siguiente">
+                  <i class="fas fa-chevron-right"></i>
+                </button>
+              </div>
+        
+              <div role="tablist" class="carousel__indicadores"></div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
+        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+      </div>
+    </div>
+  </section_4>
+
+
+
+
+
+
+  <div class="contenedor">
+		<main class="contenido-principal">
+			<div class="contenido-principal___contenedor">
+			</div>
+		</main>
+
+		<div class="carousel">
+			<div class="carousel___contenedor">
+				<button aria-label="Anterior" class="carousel___anterior">
+					<i class="fas fa-chevron-left"></i>
+				</button>
+
+				<div class="carousel___lista">
+					<div class="carousel___elemento">
+						<img src="img/Group 1621.png" alt="Rock and Roll Hall of Fame">
+					</div>
+					<div class="carousel___elemento">
+						<img src="img/Group 1620.png" alt="Constitution Square - Tower I">
+					</div>
+					<div class="carousel___elemento">
+						<img src="img/Group 1619.png" alt="Empire State Building">
+					</div>
+					<div class="carousel___elemento">
+						<img src="img/Group 1621.png" alt="Rock and Roll Hall of Fame">
+					</div>
+					<div class="carousel___elemento">
+						<img src="img/Group 1620.png" alt="Constitution Square - Tower I">
+					</div>
+					<div class="carousel___elemento">
+						<img src="img/Group 1619.png" alt="Empire State Building">
+					</div>
+					<div class="carousel___elemento">
+						<img src="img/Group 1621.png" alt="Rock and Roll Hall of Fame">
+					</div>
+					<div class="carousel___elemento">
+						<img src="img/Group 1620.png" alt="Constitution Square - Tower I">
+					</div>
+				</div>
+
+				<button aria-label="Siguiente" class="carousel___siguiente">
+					<i class="fas fa-chevron-right"></i>
+				</button>
+			</div>
+
+			<div role="tablist" class="carousel___indicadores"></div>
+		</div>
+  </div>
+
+  <div class="contenedor_2"> 
+    <div class="form p-5 w-50">
+      <h3>Suscribete a nuestro boletín</h3>
+      <select class="form-select form_2" aria-label="Default select example">
+        <option selected>Escoge tu interés</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
+      <div class="people">
+        <div class="mb-3 name">
+          <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nombre">
+        </div>
+        <div class="mb-3 last">
+          <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Apellido">
+        </div>
+      </div>
+      <div class="finish d-flex justify-content-between">
+        <div class="correo">
+          <input type="email" class="form-control " id="exampleFormControlInput1" placeholder="Correo">
+        </div>
+        <button type="button" class="btn btn-warning">SUSCRIBIRME</button>
+      </div>
+      <div class="form-check mt-1">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault">
+          Acepto los <a href="#" class="terminos">Términos y condiciones</a> y la <a href="#" class="terminos">Política de tratamiento de datos.</a>
+        </label>
+      </div>
+    </div>
+    <img src="img/depositphotos_9899978-stock-photo-builder-shows-gesture-ok 1.png" class="constructor" alt="">
+  </div>
+
+
+  <div class="footer ">
+    <div class="cont_footer row p-5 justify-content-between">
+      <div class="col_1 col-2">
+        <h5>CONTÁCTANOS</h5>
+        <p class="mt-4 color_3">Contacte con uno de nuestros asesoes o visitanos en nuestras tiendas, Con gusto lo atenderemos. </p>
+        <div class="location d-flex color_3">
+          <i class="fas fa-map-marker-alt color"></i>
+          <div class="cont_loca d-block ml-3">
+            <h6 class="mb-0">Pasto</h6>
+            <p class="mb-0">Calle 12 N° 13-06</p>
+            <p class="mb-0">Calle 18 N° 19-35</p>
+            <h6 class="mb-0">Ipiales</h6>
+            <p>Calle 5 N° 22-70</p>
+          </div>     
+        </div>
+        <div class="call d-flex mb-3">
+          <i class="fas fa-phone-alt color"></i>
+          <div class="cont_call">
+            <p class="mb-0 color_3">Pasto: 7244407</p>
+            <p class="mb-0 color_3">Ipiales: 310 596 2851</p>
+          </div>
+        </div>
+        <div class="mail d-flex">
+          <i class="fas fa-envelope color "></i>
+          <p class="text_mail color_3">comercio@casaandina.com.co</p>
+        </div>
+      </div>
+      <div class="col_2 col-2">
+        <h5>SOBRE NOSOTROS</h5>
+        <div class="link_footer d-block mt-4">
+          <a href="#">Nuestra empresa</a> <br>
+          <div class="space"></div>
+          <a href="#">Tienda oficial Mercado libre</a> <br>
+          <div class="space"></div>
+          <a href="#">Tienda oficial Linio</a> <br>
+          <div class="space"></div>
+          <a href="#">Ubicaciones</a> <br>
+          <div class="space"></div>
+          <a href="#">Información a proveedores</a> <br>
+          <div class="space"></div>
+          <a href="#">Trabajas con nosotros</a> <br>
+        </div>
+      </div>
+      <div class="col_3 col-3">
+        <h5>SERVICIO AL CLIENTE </h5>
+        <div class="link_footer d-block mt-4">
+          <a href="#">Nuestra empresa</a> <br>
+          <div class="space"></div>
+          <a href="#">Superintendencia de industria y comercio. </a> <br>
+          <div class="space"></div>
+          <a href="#">Terminos y condiciones de compra</a> <br>
+          <div class="space"></div>
+          <a href="#">Politica de tratamiento de datos</a> <br>
+          <div class="space"></div>
+          <a href="#">contactanos</a> <br>
+          <div class="space"></div>
+        </div>
+      </div>
+      <div class="col_4 col-2">
+        <h5>DESCUBRE</h5>
+        <div class="link_footer d-block mt-4">
+          <a href="#">Credito virtual</a> <br>
+          <div class="space"></div>
+          <a href="#">Nuestra especialización </a> <br>
+          <div class="space"></div>
+          <a href="#">Beneficios</a> <br>
+          <div class="space"></div>
+          <a href="#">Ambiente virtual</a> <br>
+          <div class="space"></div>
+          <a href="#">Eventos</a> <br>
+          <div class="space"></div>
+        </div>
+      </div>
+      <div class="socal-media justify-content-center w-100 text-center">
+        <i class="fab fa-facebook color size"></i>
+        <i class="fab fa-twitter color size"></i>
+        <i class="fab fa-instagram color size"></i>
+        <i class="fab fa-linkedin color size"></i>
+        <i class="fab fa-youtube color size"></i>
+      </div>
+    </div>
+    
+    <div class="footer_down">
+      <h2 class="text-center">Casa Andina | Soluciones para construir y remodelar</h2>
+      
+    </div>
+    <img src="img/carretera.png" class="carretera" alt="">
+  </div>
+
+  <button class="fixed">
+    <i class="fab fa-facebook-messenger"></i>
+  </button>
+
+
+
+
+    
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.js"></script>
+  <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+  
+  <script src="js/app.js"></script>
+
+</body>
+
+</html>
